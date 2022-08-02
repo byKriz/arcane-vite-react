@@ -6,11 +6,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Layout>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-          </Routes>
-        </Layout>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+        </Routes>
       </Router>
     </div>
   );
