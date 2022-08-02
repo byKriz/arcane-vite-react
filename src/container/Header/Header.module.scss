@@ -1,0 +1,64 @@
+.header {
+    z-index: 3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    transition: 0.5s ease;
+    background: principal-color;
+  }
+  .header .logo a,
+  .header .nav_container .nav_items a {
+    text-decoration: none;
+    color: white;
+  }
+  
+  .header .logo {
+    font-size: 2.4rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  .header .nav_container {
+    position: relative;
+  }
+  
+  .header .nav_container .nav_items a {
+    position: relative;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-left: 30px;
+  }
+  
+  /* aplicando psudoclases */
+  /* crenado el subrayado dinamico */
+  .header .nav_container .nav_items a:before {
+    /* crenado el subrayado */
+    content: "";
+    position: absolute;
+    background: white;
+    width: 0;
+    height: 3px;
+    bottom: -2px;
+    left: 0;
+    transition: 0.3s ease; /* animacion de la linea */
+  }
+  
+  .header .nav_container .nav_items a:hover:before {
+    /* resultado final de la linea */
+    width: 100%;
+  }
+  
+  @media (max-width: 799px) {
+    /* .header {
+          padding: 15px 20px;
+      } */
+    .header .nav_container {
+      display: none;
+    }
+  }
