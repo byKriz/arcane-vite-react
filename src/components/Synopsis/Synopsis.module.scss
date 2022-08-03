@@ -1,18 +1,53 @@
 .main {
   position: relative;
   z-index: 2;
-  color: greenyellow;
-  font-size: 5rem;
-  padding: 100px;
+  color: white;
+  font-size: 1.6rem;
+  padding: 80px 20px 0px 20px;
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  height: 100vh;
 }
 
 .synopsisContainer {
   display: flex;
+  flex-wrap: wrap;
+  width: 100%;
 }
 
-.poster img{
+.poster {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.poster img {
   height: 350px;
   border-radius: 5px;
   box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
   transition: 0.3s ease;
+}
+
+.textContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.textContainer p {
+  text-align: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.title h1 {
+  margin: auto;
+  font-size: 6rem;
 }
