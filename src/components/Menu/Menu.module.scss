@@ -14,6 +14,15 @@
   cursor: pointer;
 }
 
+.deactivete {
+  background: url(../../assets/icons/x-icon.png) no-repeat;
+  background-size: 30px;
+  background-position: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+}
+
 .navMenuItems {
   display: none;
   background-color: white;
@@ -47,10 +56,28 @@
 }
 */
 
+/* Configurando menu en celular */
+@media (min-width: 320px) and (max-width: 428px) {
+  .menuContainer {
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .menuContainer li {
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+  }
+}
+
+
+
 @media (max-width: 800px) {
   .menu {
     display: block;
   }
+
   .navMenuItems {
     width: 100%;
     border-radius: 0;
@@ -68,6 +95,10 @@
 }
 
 @media (min-width: 800px) {
+  .menu {
+    display: none;
+  }
+
   .activate {
     display: none;
   }
