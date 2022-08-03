@@ -1,9 +1,19 @@
 .videoSlide {
-    z-index: background-index;
+    z-index: 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover; /* ajustar el video a la imagen */
+}
+
+.screen {
+    z-index: 1;
+    position: absolute;
+    background: rgb(255, 255, 255);
+    opacity: 0.1;
+    width: 100%;
+    height: 100%;
+
 }
