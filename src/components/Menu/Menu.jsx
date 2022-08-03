@@ -7,6 +7,12 @@ export function Menu() {
         setSlide(!slide);
     }
 
+  const LINKS = [
+    {name: "Home", link: "/"},
+    {name: "Characters", link: "/"},
+    {name: "Locations", link: "/"},
+    {name: "Social", link: "/"},
+  ]
 
   return (
     <>
@@ -15,18 +21,11 @@ export function Menu() {
       </div>
       <nav className={slide ? `${styles.navMenuItems} ${styles.activate}` : styles.navMenuItems}>
         <ul className={styles.menuContainer}>
-          <li>
-            <a href="/">HOME</a>
+          {LINKS.map((link) => (
+            <li>
+            <a href={link.link}>{link.name}</a>
           </li>
-          <li>
-            <a href="/">CHARACTERS</a>
-          </li>
-          <li>
-            <a href="/">LOCATIONS</a>
-          </li>
-          <li>
-            <a href="/">SOCIAL</a>
-          </li>
+          ))}
         </ul>
       </nav>
     </>
