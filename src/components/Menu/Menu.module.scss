@@ -2,6 +2,7 @@
   display: none;
   z-index: 4;
   color: white;
+  font-family: "Poppins", sans-serif;
 }
 
 .menuIcon {
@@ -18,15 +19,15 @@
   background-color: white;
   color: black;
   border-radius: 10%;
-  padding: 20px 10px;
+  padding: 10px;
 }
 
 .activate {
   display: block;
   align-content: center;
   position: absolute;
-  font-size: 3rem;
-  font-weight: bold;
+  font-size: 2rem;
+  font-weight: 600;
   top: 62px;
   right: 10px;
 }
@@ -46,9 +47,23 @@
 }
 */
 
-@media (max-width: 799px) {
+@media (max-width: 800px) {
   .menu {
     display: block;
+  }
+  .navMenuItems {
+    width: 100%;
+    border-radius: 0;
+
+  }
+
+  .activate {
+    right: 0;
+  }
+
+  .menuContainer {
+    flex-direction: row;
+    justify-content: space-around;
   }
 }
 

@@ -10,6 +10,7 @@
     padding: 15px 50px;
     transition: 0.5s ease;
     background: principal-color;
+    font-family: "Poppins", sans-serif;
   }
   .header .logo a,
   .header .nav_container .nav_items a {
@@ -54,7 +55,7 @@
     width: 100%;
   }
   
-  @media (max-width: 799px) {
+  @media (max-width: 800px) {
     /* .header {
           padding: 15px 20px;
       } */
