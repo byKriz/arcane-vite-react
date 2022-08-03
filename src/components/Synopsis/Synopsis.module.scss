@@ -1,0 +1,18 @@
+.main {
+  position: relative;
+  z-index: 2;
+  color: greenyellow;
+  font-size: 5rem;
+  padding: 100px;
+}
+
+.synopsisContainer {
+  display: flex;
+}
+
+.poster img{
+  height: 350px;
+  border-radius: 5px;
+  box-shadow: 0 5px 25px rgba(1 1 1 / 20%);
+  transition: 0.3s ease;
+}
