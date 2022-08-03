@@ -1,3 +1,4 @@
+import { Menu } from "../../components/Menu/Menu";
 import styles from "./Header.module.scss";
 
 export const Header = () => {
@@ -15,7 +16,7 @@ export const Header = () => {
             <a href="/">Social</a>
           </div>
         </nav>
-        {/* <Menu /> */}
+        <Menu />
       </header>
     </>
   );
