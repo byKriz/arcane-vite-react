@@ -1,4 +1,5 @@
 .main {
+  display: flex;
   position: relative;
   z-index: 2;
   color: white;
@@ -50,4 +51,37 @@
 .title h1 {
   margin: auto;
   font-size: 6rem;
+}
+
+@media (min-width: 428px) and (max-width: 800px) {
+
+  .synopsisContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .poster {
+    width: 50%;
+  }
+
+  .textContainer {
+    width: 50%;
+  }
+}
+
+@media (min-width: 801px) {
+  .synopsisContainer {
+    flex-direction: row;
+    align-items: center;
+  }
+  .poster {
+    width: 50%;
+  }
+
+  .poster img {
+    height: 600px;
+  }
+
+  .textContainer {
+    width: 50%;
+  }
 }
