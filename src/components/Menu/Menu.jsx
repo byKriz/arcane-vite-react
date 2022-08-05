@@ -9,7 +9,7 @@ export function Menu() {
 
   const LINKS = [
     { name: "Home", link: "/" },
-    { name: "Characters", link: "/" },
+    { name: "Characters", link: "/characters" },
     { name: "Locations", link: "/" },
     { name: "Social", link: "/" },
   ];

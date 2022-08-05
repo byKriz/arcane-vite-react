@@ -11,7 +11,7 @@ export const Header = () => {
         <nav className={styles.nav_container} id="nav_container">
           <div className={styles.nav_items}>
             <a href="/">Home</a>
-            <a href="/">Characters</a>
+            <a href="/characters">Characters</a>
             <a href="/">Locations</a>
             <a href="/">Social</a>
           </div>
