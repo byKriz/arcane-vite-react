@@ -4,10 +4,10 @@ import { Synopsis } from "../../components/Synopsis/Synopsis";
 
 export const Home = () => {
   return (
-    <>
+    <div className="home">
       <Synopsis>
         <VideoBG videoBG={video} />
       </Synopsis>
-    </>
+    </div>
   );
 };
