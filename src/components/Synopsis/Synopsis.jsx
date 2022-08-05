@@ -1,5 +1,6 @@
 import styles from "./Synopsis.module.scss";
 import poster from "../../assets/images/ArcanePoster.png";
+import { Icon } from "../Icon/Icon";
 
 export function Synopsis({ children }) {
   return (
@@ -30,6 +31,8 @@ export function Synopsis({ children }) {
             </p>
           </div>
         </div>
+        <Icon link='https://github.com/byKriz/arcane-vite-react' iconName='github'/>
+        <Icon link='https://twitter.com/arcaneshow?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor' iconName='twitter'/>
       </div>
     </main>
   );

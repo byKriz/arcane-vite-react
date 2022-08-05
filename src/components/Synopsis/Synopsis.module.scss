@@ -1,5 +1,7 @@
 .main {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
   z-index: 2;
   color: white;
@@ -13,6 +15,8 @@
 .synopsisContainer {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
   width: 100%;
 }
 
@@ -53,14 +57,17 @@
   font-size: 6rem;
 }
 
-@media (min-width: 428px) and (max-width: 800px) {
-
+@media (min-width: 560px) and (max-width: 800px) {
   .synopsisContainer {
     flex-direction: row;
     align-items: center;
   }
   .poster {
     width: 50%;
+  }
+
+  .poster img {
+    height: 380px;
   }
 
   .textContainer {
@@ -72,9 +79,11 @@
   .synopsisContainer {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 50px;
   }
   .poster {
-    width: 50%;
+    width: 45%;
   }
 
   .poster img {
@@ -82,6 +91,6 @@
   }
 
   .textContainer {
-    width: 50%;
+    width: 45%;
   }
 }
