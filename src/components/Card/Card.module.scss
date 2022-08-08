@@ -1,49 +1,79 @@
 .card {
-  position: relative;
-  max-width: 300px;
-  height: 250px;
-
-  background: white;
-  margin: 30px 10px;
-  padding: 20px 15px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  border-radius: 30px 30px 25px 25px;
+  background-color: #fff;
+  margin: 20px;
+  width: 320px;
+}
+
+.cardImage {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
+
+.cardImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070f4;
+}
+
+.imageContent,
+.cardContent {
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   flex-direction: column;
-  box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
-  transition: 0.3s ease-in-out;
 }
 
-.card:hover {
-  height: 420px;
-}
-
-.card .imgBx {
+.imageContent {
   position: relative;
-  width: 260px;
-  height: 260px;
-  top: -60px;
-  left: 4px;
-  z-index: 1;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+  row-gap: 5px;
+  width: 100%;
+  height: 100%;
 }
 
-.card .imgBx img {
-  max-width: 100%;
-  border-radius: 10px;
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #4070f4;
+  border-radius: 25px 25px 0 25px;
 }
 
-.card .content {
-  position: relative;
-  margin-top: -140px;
-  padding: 10px 15px;
+.overlay:before,
+.overlay:after {
+  content: '';
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  background-color: red;
+}
+
+.overlay::before,
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #4070f4;
+}
+
+.cardContent h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.cardContent p {
   text-align: center;
-  visibility: hidden;
-  opacity: 0;
-  transition: 0.3s ease-in-out;
-}
-
-.card:hover .content {
-  visibility: visible;
-  opacity: 1;
-  margin-top: -80px;
-  transition-delay: 0.3s;
+  font-size: 1.4rem;
 }
