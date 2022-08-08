@@ -1,8 +1,16 @@
 .main {
     position: absolute;
     display: flex;
+    justify-content: center;
+    align-items: center;
     background: green;
     width: 100%;
-    height: auto;
+    height: 100%;
     top: 58px;
+}
+
+@media (max-width: 712px) {
+    .main {
+        height: auto;
+    }
 }
